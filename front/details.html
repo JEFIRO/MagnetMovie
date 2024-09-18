@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes do Filme</title>
+    <link rel="stylesheet" href="styles/details.css" />
+  </head>
+  <body>
+    <nav class="cabecalho_nav">
+      <ul id="menu">
+        <li id="item_inicio">
+          <a href="index.html">Início</a>
+        </li>
+        <li id="item_filmes"><a href="">Filmes</a></li>
+        <li id="item_contatos"><a href="">Contatos</a></li>
+        <li id="item_pedidos"><a href="">Pedidos</a></li>
+        <li id="item_lista_desejos">
+          <a href="desejo.html">Lista de desejos</a>
+        </li>
+      </ul>
+      <div class="input_text">
+        <input type="text" placeholder="Buscar" />
+        <button>Buscar</button>
+      </div>
+    </nav>
+    <main class="conteiner">
+      <header class="iffo_filme">
+        <h1 id="movie-title"></h1>
+        <a href="" id="movie-runtime-c"></a>
+        <a href="" class="movie-genre-1"></a>
+        <a href="" class="movie-genre-2"></a>
+        <a href="" class="movie-genre-3"></a>
+        <a href="" class="movie-genre-4"></a>
+      </header>
+      <div class="detalhes">
+        <div class="filmes">
+          <img id="movie-poster" alt="Capa do filme" />
+          <p><strong>Título Original: </strong><span id="title"></span></p>
+          <p><strong>Gênero: </strong><span id="movie-genero"></span></p>
+          <p>
+            <strong>Ano de lançamento: </strong
+            ><span id="movie-release-date"></span>
+          </p>
+          <p><strong>Duração: </strong><span id="movie-runtime"></span>Min</p>
+        </div>
+        <div class="filme_detalhe">
+          <h3>Sinopse</h3>
+          <p id="movie-overview"></p>
+          <div class="mais_detalhes">
+            <p><strong>País de Origem:</strong> EUA</p>
+            <p><strong>Popularidade:</strong> Alta</p>
+            <button id="button_Laste">
+              <strong>Assistir mais tarde</strong>
+            </button>
+          </div>
+        </div>
+        <div class="elenco">
+          <div class="videos">
+            <h3>Trailer</h3>
+            <video
+              src="https://www.youtube.com/watch?v=q_xeCu3P9hU&list=RDQ-6oxgFX6Ho&index=11"
+              controls
+            ></video>
+          </div>
+          <div class="elenco_atores">
+            <h3><strong>Elenco</strong></h3>
+            <div class="atores"></div>
+          </div>
+          <div class="elenco_diretor">
+            <h3><strong>Diretor</strong></h3>
+            <div class="diretor"></div>
+          </div>
+        </div>
+      </div>
+      <div class="recomendados">
+        <h3>Recomendados</h3>
+        <div class="recomendados_filmes"></div>
+      </div>
+    </main>
+    <script src="script/details.js"></script>
+  </body>
+</html>

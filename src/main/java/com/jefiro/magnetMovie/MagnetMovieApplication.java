@@ -1,0 +1,13 @@
+package com.jefiro.magnetMovie;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MagnetMovieApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MagnetMovieApplication.class, args);
+	}
+
+}

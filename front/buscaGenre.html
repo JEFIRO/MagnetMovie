@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Filmes</title>
+    <link rel="stylesheet" href="styles/buscaGenre.css" />
+  </head>
+  <body>
+    <nav class="cabecalho_nav">
+      <ul id="menu">
+        <li id="item_inicio"><a href="index.html">Inicio</a></li>
+        <li id="item_filmes"><a href="">Filmes</a></li>
+        <li id="item_contatos"><a href="">Contatos</a></li>
+        <li id="item_pedidos"><a href="">Pedidos</a></li>
+        <li id="item_lista_desejos">
+          <a href="desejo.html">Lista de desejos</a>
+        </li>
+        <select id="genre">
+            <option value="Ação">Ação</option>
+            <option value="Aventura">Aventura</option>
+            <option value="Animação">Animação</option>
+            <option value="Comédia">Comédia</option>
+            <option value="Crime">Crime</option>
+            <option value="Documentário">Documentário</option>
+            <option value="Drama">Drama</option>
+            <option value="Família">Família</option>
+            <option value="Fantasia">Fantasia</option>
+            <option value="História">História</option>
+            <option value="Terror">Terror</option>
+            <option value="Música">Música</option>
+            <option value="Mistério">Mistério</option>
+            <option value="Romance">Romance</option>
+            <option value="Ficção_Científica">Ficção Científica</option>
+            <option value="Cinema TV">Cinema TV</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Guerra">Guerra</option>
+            <option value="Faroeste">Faroeste</option>
+        </select>
+      </ul>
+      <div class="input_text">
+        <input type="text" placeholder="Buscar" />
+        <button id="pesquisa-button">Buscar</button>
+      </div>
+    </nav>
+    <main>
+      <section id="movie-list"></section>
+      <div class="pagination">
+        <button id="prev-page" disabled>Anterior</button>
+        <button id="next-page">Próxima</button>
+      </div>
+    </main>
+    <script src="script/buscaGenre.js"></script>
+  </body>
+</html>

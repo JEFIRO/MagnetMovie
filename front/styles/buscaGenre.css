@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a1d29; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+header {
+    background-color: #1e2a34; /* Fundo escuro do cabeçalho */
+    color: #e0e0e0; /* Texto claro */
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #10242f; /* Borda sutil */
+}
+
+main {
+    padding: 1rem;
+}
+
+#movie-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colunas */
+    grid-template-rows: repeat(3, auto); /* 3 linhas */
+    gap: 1rem; /* Espaçamento entre os itens */
+    justify-content: center;
+    padding: 20px;
+}
+
+.movie {
+    background-color: #1e2a34; /* Fundo escuro dos filmes */
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Sombra similar ao primeiro bloco */
+    transition: transform 0.3s ease;
+}
+
+.movie:hover {
+    transform: scale(1.02); /* Efeito de zoom suave ao passar o mouse */
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.movie-info {
+    padding: 0.5rem;
+    color: #e0e0e0; /* Cor clara para o texto das informações dos filmes */
+    text-decoration: none;
+}
+
+.movie-info h3 {
+    color: #e0e0e0; /* Cor clara para o título dos filmes */
+    text-decoration: none;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF; /* Azul vibrante */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #6c757d; /* Cinza para botão desativado */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul escuro ao passar o mouse */
+}
+
+#movie a {
+    text-decoration: none;
+    color: #e0e0e0; /* Cor clara para links nos filmes */
+}
+
+.cabecalho_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #0a1d29; /* Fundo escuro */
+    border-bottom: 2px solid #10242f; /* Borda sutil para destaque */
+}
+
+.cabecalho_nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.cabecalho_nav li {
+    margin: 0;
+}
+
+.cabecalho_nav a {
+    text-decoration: none;
+    color: #e0e0e0; /* Cor do texto clara */
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px;
+    display: block;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.cabecalho_nav li:hover {
+    background-color: #1e2a34; /* Fundo escuro ao passar o mouse */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.cabecalho_nav .input_text {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_nav input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px; /* Espaço entre o campo de texto e o botão */
+    background-color: #10242f; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    border: 1px solid #1e2a34; /* Borda escura */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.cabecalho_nav input[type="text"]:focus {
+    background-color: #1e2a34; /* Fundo escuro mais intenso ao focar */
+    outline: none; /* Remove o contorno padrão */
+    border-color: #007bff; /* Cor da borda ao focar */
+}
+
+.cabecalho_nav button {
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff; /* Azul vibrante */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.cabecalho_nav button:hover {
+    background-color: #0056b3; /* Azul escuro ao passar o mouse */
+}
